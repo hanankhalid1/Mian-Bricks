@@ -2,6 +2,9 @@ import { Helmet } from "react-helmet-async";
 import Layout from "@/components/layout/Layout";
 import { Award, Users, Target, Heart } from "lucide-react";
 
+// Import image from assets
+import heroImage from "@/assets/hero3.jpg";
+
 const About = () => {
   return (
     <>
@@ -76,7 +79,7 @@ const About = () => {
                 <div
                   className="aspect-[4/3] rounded-2xl bg-cover bg-center relative overflow-hidden shadow-xl"
                   style={{
-                    backgroundImage: "url('/src/assets/hero3.jpg')", // change to your image
+                    backgroundImage: `url(${heroImage})`, // Updated image import
                   }}
                 >
                   {/* Red Transparent Overlay */}

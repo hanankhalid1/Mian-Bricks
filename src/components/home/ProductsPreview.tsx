@@ -2,10 +2,16 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+// Import images from assets
+import p1 from "@/assets/p1.jpg";
+import p2 from "@/assets/p2.jpg";
+import p3 from "@/assets/p3.jpg";
+import p4 from "@/assets/p4.jpg";
+
 const products = [
   {
     name: "Standard (اول) Bricks",
-    image: "/src/assets/p1.jpg", // Add your image
+    image: p1,
     description:
       "Our flagship red clay bricks perfect for all general construction needs. Manufactured traditionally with consistent quality.",
     features: [
@@ -18,7 +24,7 @@ const products = [
   },
   {
     name: "Normal (دوم) Bricks",
-    image: "/src/assets/p2.jpg",
+    image: p2,
     description:
       "A good-quality brick suitable for exterior and interior construction with balanced durability and cost.",
     features: [
@@ -31,7 +37,7 @@ const products = [
   },
   {
     name: "Basic (بارشی) Bricks",
-    image: "/src/assets/p3.jpg",
+    image: p3,
     description:
       "A budget-friendly brick used for large-scale construction projects while maintaining decent strength.",
     features: [
@@ -44,7 +50,7 @@ const products = [
   },
   {
     name: "Tile (ٹائل) Bricks",
-    image: "/src/assets/p4.jpg",
+    image: p4,
     description:
       "Specialized bricks engineered to handle extreme heat—best for tandoors, chimneys, furnaces, and fireplaces.",
     features: [

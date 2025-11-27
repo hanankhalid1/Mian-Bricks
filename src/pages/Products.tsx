@@ -4,10 +4,16 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Check, ArrowRight } from "lucide-react";
 
+// Import images from assets for production
+import p1 from "@/assets/p1.jpg";
+import p2 from "@/assets/p2.jpg";
+import p3 from "@/assets/p3.jpg";
+import p4 from "@/assets/p4.jpg";
+
 const products = [
   {
     name: "Standard (اول) Bricks",
-    image: "/src/assets/p1.jpg",
+    image: p1,
     description:
       "Our flagship product - classic red clay bricks perfect for all general construction needs. Manufactured using traditional methods with consistent quality.",
     features: [
@@ -22,7 +28,7 @@ const products = [
   },
   {
     name: "Normal (دوم) Bricks",
-    image: "/src/assets/p2.jpg",
+    image: p2,
     description:
       "Good quality bricks suitable for exterior facades and general construction with a balanced finish and strength.",
     features: [
@@ -37,7 +43,7 @@ const products = [
   },
   {
     name: "Basic (بارشی) Bricks",
-    image: "/src/assets/p3.jpg",
+    image: p3,
     description:
       "Affordable yet reliable bricks commonly used for large-scale projects and boundary walls.",
     features: [
@@ -52,7 +58,7 @@ const products = [
   },
   {
     name: "Tile (ٹائل) Bricks",
-    image: "/src/assets/p4.jpg",
+    image: p4,
     description:
       "Specialized heat-resistant bricks designed for furnaces, tandoors, chimneys, fireplaces, and industrial applications.",
     features: [
@@ -70,6 +76,7 @@ const products = [
 const Products = () => {
   return (
     <>
+      {/* Page Metadata */}
       <Helmet>
         <title>
           Our Products - Mian Bricks | Quality Bricks for Every Construction
@@ -123,7 +130,7 @@ const Products = () => {
                     </span>
                   )}
 
-                  {/* PRODUCT IMAGE */}
+                  {/* Product Image */}
                   <div className="aspect-[4/3] rounded-lg overflow-hidden mb-6">
                     <img
                       src={product.image}
@@ -132,12 +139,12 @@ const Products = () => {
                     />
                   </div>
 
-                  {/* Title */}
+                  {/* Product Title */}
                   <h2 className="text-2xl font-bold text-foreground mb-3">
                     {product.name}
                   </h2>
 
-                  {/* Description */}
+                  {/* Product Description */}
                   <p className="text-muted-foreground text-sm mb-6">
                     {product.description}
                   </p>
