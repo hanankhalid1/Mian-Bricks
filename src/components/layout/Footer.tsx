@@ -82,7 +82,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {[
                 "Standard Bricks",
-                "Noraml Bricks",
+                "Normal Bricks",
                 "Basic Bricks",
                 "Tile Bricks",
               ].map((product) => (
