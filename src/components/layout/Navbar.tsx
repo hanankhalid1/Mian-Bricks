@@ -4,6 +4,8 @@ import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
+import logo from "@/assets/logo.png";
+
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "Products", path: "/products" },
@@ -70,7 +72,7 @@ const Navbar = () => {
             <Link to="/" className="flex items-center gap-3 group">
               <div className="w-14 h-14 rounded-full overflow-hidden">
                 <img
-                  src="/src/assets/logo.png"
+                  src={logo} // use the imported logo
                   alt="Mian Bricks"
                   className="w-full h-full object-contain"
                 />

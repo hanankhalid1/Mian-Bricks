@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { HiPhone, HiMail, HiLocationMarker, HiClock } from "react-icons/hi";
 
+import logo from "@/assets/logo.png";
+
 const Footer = () => {
   return (
     <footer className="bg-charcoal text-primary-foreground">
@@ -12,7 +14,7 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-lg overflow-hidden flex items-center justify-center">
                 <img
-                  src="/src/assets/logo.png"
+                  src={logo} // use the imported logo
                   alt="Mian Bricks"
                   className="w-full h-full object-contain"
                 />
