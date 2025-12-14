@@ -99,7 +99,7 @@ const ProductsPreview = () => {
               className="group bg-card rounded-xl border border-border p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
             >
               {/* Product Image */}
-              <div className="aspect-square rounded-lg mb-6 overflow-hidden">
+              <div className="aspect-auto rounded-lg mb-6 overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.name}

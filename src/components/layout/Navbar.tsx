@@ -68,17 +68,20 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
-              <div className="w-14 h-14 bg-gradient-to-br from-primary to-brick-dark rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-                <span className="text-primary-foreground font-bold text-2xl">
-                  MB
-                </span>
+              <div className="w-14 h-14 rounded-full overflow-hidden">
+                <img
+                  src="/src/assets/logo.png"
+                  alt="Mian Bricks"
+                  className="w-full h-full object-contain"
+                />
               </div>
-              <div className="hidden sm:block">
-                <h1 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+
+              <div className="block">
+                <h1 className="text-lg sm:text-xl font-bold text-foreground group-hover:text-primary transition-colors">
                   Mian Bricks
                 </h1>
-                <p className="text-xs text-muted-foreground flex items-center gap-1">
-                  <span className="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+                <p className="text-[10px] sm:text-xs text-muted-foreground flex items-center gap-1">
+                  {/* <span className="w-2 h-2 bg-accent rounded-full animate-pulse"></span> */}
                   Quality Since 1999
                 </p>
               </div>

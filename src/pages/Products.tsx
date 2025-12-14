@@ -131,7 +131,7 @@ const Products = () => {
                   )}
 
                   {/* Product Image */}
-                  <div className="aspect-[4/3] rounded-lg overflow-hidden mb-6">
+                  <div className="aspect-[4/5] rounded-lg overflow-hidden mb-6">
                     <img
                       src={product.image}
                       alt={product.name}

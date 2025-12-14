@@ -1,13 +1,6 @@
 import { Link } from "react-router-dom";
-import {
-  Phone,
-  Mail,
-  MapPin,
-  Clock,
-  Facebook,
-  Instagram,
-  Linkedin,
-} from "lucide-react";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { HiPhone, HiMail, HiLocationMarker, HiClock } from "react-icons/hi";
 
 const Footer = () => {
   return (
@@ -17,10 +10,12 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">
-                  MB
-                </span>
+              <div className="w-12 h-12 rounded-lg overflow-hidden flex items-center justify-center">
+                <img
+                  src="/src/assets/logo.png"
+                  alt="Mian Bricks"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold">Mian Bricks</h3>
@@ -36,19 +31,21 @@ const Footer = () => {
                 href="#"
                 className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
               >
-                <Facebook className="w-5 h-5" />
+                <FaFacebookF className="w-5 h-5" />
               </a>
               <a
                 href="#"
                 className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
               >
-                <Instagram className="w-5 h-5" />
+                <FaInstagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://wa.me/923006618358"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
               >
-                <Linkedin className="w-5 h-5" />
+                <FaWhatsapp className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -103,14 +100,14 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6">Contact Us</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                <HiLocationMarker className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-clay text-sm">
                   Main Jhumra Road Gatti Railway Station, Near Shaheen Power
                   Loom, Faisalabad, Pakistan
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-primary flex-shrink-0" />
+                <HiPhone className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
                   href="tel:03006618358"
                   className="text-clay hover:text-primary transition-colors text-sm"
@@ -119,7 +116,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-primary flex-shrink-0" />
+                <HiMail className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
                   href="mailto:mianbricksinfo@gmail.com"
                   className="text-clay hover:text-primary transition-colors text-sm"
@@ -128,7 +125,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Clock className="w-5 h-5 text-primary flex-shrink-0" />
+                <HiClock className="w-5 h-5 text-primary flex-shrink-0" />
                 <span className="text-clay text-sm">
                   Mon - Sat: 8:00 AM - 6:00 PM
                 </span>

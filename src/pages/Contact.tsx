@@ -240,9 +240,9 @@ const Contact = () => {
                 <div className="mt-8 rounded-xl overflow-hidden border border-border relative">
                   <div className="w-full h-0 pb-[66%] relative">
                     <iframe
-                      src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Mian%20Bricks%20Company%20%20Faisalabad&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                      src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Mian%20Bricks%20Works&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                      style={{ border: 0, width: "100%", height: "100%" }}
                       className="absolute top-0 left-0 w-full h-full"
-                      style={{ border: 0 }}
                       loading="lazy"
                       allowFullScreen
                       referrerPolicy="no-referrer-when-downgrade"

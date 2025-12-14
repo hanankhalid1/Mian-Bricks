@@ -25,14 +25,16 @@ const LocationMap = () => {
           {/* Map */}
           <div className="lg:col-span-2 rounded-xl overflow-hidden shadow-elegant border border-border relative aspect-[3/2]">
             <iframe
-              src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Mian%20Bricks%20Company%20%20Faisalabad&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+              src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Mian%20Bricks%20Works&t=&z=14&ie=UTF8&iwloc=B&output=embed"
               title="Mian Bricks Location"
               loading="lazy"
               className="absolute top-0 left-0 w-full h-full"
-              frameBorder={0}
+              frameBorder="0"
               scrolling="no"
-              marginHeight={0}
-              marginWidth={0}
+              marginHeight="0"
+              marginWidth="0"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
             ></iframe>
           </div>
 

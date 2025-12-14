@@ -3,7 +3,7 @@ import Layout from "@/components/layout/Layout";
 import { Award, Users, Target, Heart } from "lucide-react";
 
 // Import image from assets
-import heroImage from "@/assets/hero3.jpg";
+import heroImage from "@/assets/hero1.png";
 
 const About = () => {
   return (
@@ -89,7 +89,7 @@ const About = () => {
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center px-8 py-5 bg-white/20 backdrop-blur-xl rounded-xl border border-white/40 shadow-2xl">
                       <div className="text-7xl font-extrabold text-white drop-shadow-xl">
-                        2008
+                        1999
                       </div>
                       <p className="text-white font-semibold tracking-wide text-lg mt-1">
                         Established
@@ -175,15 +175,15 @@ const About = () => {
             <div className="max-w-3xl mx-auto">
               {[
                 {
-                  year: "2008",
+                  year: "1999",
                   event: "Mian Bricks founded with first traditional kiln",
                 },
                 {
-                  year: "2010",
+                  year: "2005",
                   event: "Expanded production capacity with more area",
                 },
                 {
-                  year: "2015",
+                  year: "2012",
                   event:
                     "Introduced quality control inspection for brick testing",
                 },
