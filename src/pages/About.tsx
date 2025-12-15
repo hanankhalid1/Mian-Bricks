@@ -3,7 +3,7 @@ import Layout from "@/components/layout/Layout";
 import { Award, Users, Target, Heart } from "lucide-react";
 
 // Import image from assets
-import heroImage from "@/assets/hero1.png";
+import heroImage from "@/assets/hero1.jpeg";
 
 const About = () => {
   return (
